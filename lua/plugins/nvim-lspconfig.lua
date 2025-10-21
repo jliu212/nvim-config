@@ -4,7 +4,7 @@ return {
     servers = {
       omnisharp = {
         cmd = {
-          "/home/joliu/.local/share/nvim/mason/packages/omnisharp/OmniSharp",
+          vim.fn.expand("~") .. "/.local/share/nvim/mason/packages/omnisharp/OmniSharp",
           "--languageserver",
           "--hostPID",
           tostring(vim.fn.getpid()),
